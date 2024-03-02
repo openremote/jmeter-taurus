@@ -16,6 +16,7 @@ RUN apk add --update --no-cache python3 pipx \
     && apk del .build-deps
 
 ENV JMETER_VERSION=${JMETER_VERSION}
+ENV JMETER_PLUGIN_MANAGER_VERSION=${JMETER_PLUGIN_MANAGER_VERSION}
 ENV PATH="${PATH}:/root/.local/bin"
 
 # Download JMeter so we can load our custom plugins (taurus can only download plugins from the JMeter Plugins Manager)
