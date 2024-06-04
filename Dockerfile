@@ -28,7 +28,7 @@ RUN cd /tmp \
     && wget -P /root/.bzt/jmeter-taurus/${JMETER_VERSION}/lib/ext/ -c https://repo1.maven.org/maven2/kg/apc/jmeter-plugins-manager/${JMETER_PLUGIN_MANAGER_VERSION}/jmeter-plugins-manager-${JMETER_PLUGIN_MANAGER_VERSION}.jar \
     && wget -P /root/.bzt/jmeter-taurus/${JMETER_VERSION}/lib -c https://repo1.maven.org/maven2/kg/apc/cmdrunner/${CMD_RUNNER_VERSION}/cmdrunner-${CMD_RUNNER_VERSION}.jar \
     && java -cp /root/.bzt/jmeter-taurus/${JMETER_VERSION}/lib/ext/jmeter-plugins-manager-${JMETER_PLUGIN_MANAGER_VERSION}.jar org.jmeterplugins.repository.PluginManagerCMDInstaller \
-    && wget -P /root/.bzt/jmeter-taurus/${JMETER_VERSION}/lib/ext/ -c https://github.com/richturner/mqtt-jmeter/releases/download/2.0.5-RT/plugin-xmeter-2.0.5-RT-jar-with-dependencies.jar \
+    && wget -P /root/.bzt/jmeter-taurus/${JMETER_VERSION}/lib/ext/ -c https://github.com/richturner/mqtt-jmeter/releases/download/2.0.5-RT/plugin-xmeter-2.0.6-RT-jar-with-dependencies.jar \
     && mkdir /bzt-configs /tmp/artifacts \
     && mkdir -p /etc/bzt.d \
     && echo "settings:" >> /root/.bzt-rc \
